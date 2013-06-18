@@ -11,7 +11,7 @@ NOTES:
 - The seeds file contains 30 questions, with corresponding answer sets--10 for each skill level: "alcolyte" (easy), "maester" (medium), "archmaester" (difficult). The "maester's challenge" and the "archmaester's challenge" have been set to 10 questions each for the purpose of brevity during project presentation. When deployed for actual use these "challenges" will be 100 questions in length or longer.
 - The seeds file does not contain an admin user. When deploying the code, after using rake to migrate the database, the first user needs to be created via the registration form. Then the admin boolean on that user account needs to be set to "true" in order to designate that user account an administrator.
 - Adminstrator accounts will see a "Add Question" link at the top-left of the browser window. Clicking on that link will take them to the /questions directory where they can add, delete, and edit questions and choices manually.
-- Admistrator Account credentials will be provided for Steven, Eddie, and Stephanie...
+- Admistrator Account credentials will be provided for instructors (Steven, Eddie, and Stephanie) via Schoology messaging and/or other means...
 
 Project Requirements:
 1)  "User Generated Content. Your web application must have user-generated content that can be discovered by other users. It will maintain user accounts."

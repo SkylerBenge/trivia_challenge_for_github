@@ -4,7 +4,13 @@ class QuizController < ApplicationController
   end
 
   def start
- 	 reset_session
+	 if user_signed_in?
+             @user = current_user
+             reset_session
+             sign_in(@user, :bypass => true)
+         else
+             reset_session
+         end
 
 	 total = params[:number].to_i
          all = Question.where("question_type = 'alcolyte'").map {|x| x.id}
